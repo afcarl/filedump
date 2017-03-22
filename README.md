@@ -1,3 +1,5 @@
+from filedump import FileDump
+
 # filedump
 minimalistic way of storing a big amount of data to the disk
 
