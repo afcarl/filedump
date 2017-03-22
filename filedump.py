@@ -24,13 +24,12 @@ class FileDump:
         # check if meta file exists
         # if yes: load meta data
         # if no:  init meta data
-        meta_exists = os.path.isfile(self._meta)
-        if meta_exists:
+        if os.path.isfile(self._meta):
             if n_per_file is not None:
                 raise Exception("metafile found, cannot set n_per_file to {0}"
                                 .format(n_per_file))
             self._load_metadata()
-        elif not meta_exists:
+        else:
             if n_per_file is None:
                 raise Exception("no metafile found,"
                                 "cannot set n_per_file to None")
