@@ -1,10 +1,10 @@
-from filedump import FileDump
-
 # filedump
 minimalistic way of storing a big amount of data to the disk
 
 ## Usage
 ```python
+
+from filedump import FileDump
 
 # path where the stuff should be stored
 path = "path/to/storage"
