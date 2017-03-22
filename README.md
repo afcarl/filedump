@@ -17,7 +17,7 @@ with FileDump(store_path, n_elems_in_file) as f:
     
     # store stuff
     for i in range(10000):
-        f.dump({"foo": "bar {0}".format(i)}
+        f.dump({"foo": "bar {0}".format(i)})
 
 # reusing an old dump
 with FileDump(store_path) as f:
@@ -27,7 +27,7 @@ with FileDump(store_path) as f:
     
     # store other stuff
     for i in range(20000, 30000):
-        f.dump({"foo": "bar {0}".format(i)}
+        f.dump({"foo": "bar {0}".format(i)})
     
     # load a particular range
     for elem in f.read(500, 1367):
